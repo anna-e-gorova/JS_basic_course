@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        'use strict'
+
+        function sum(num1,num2) {
+          return num1 + num2;
+        }
+        function res(num1,num2) {
+            return num1 - num2
+        }
+        function del(num1,num2) {
+            return num1 / num2
+        }
+        function mul(num1,num2) {
+            return num1 * num2
+        }
+
+        function mathOperation(arg1,arg2,operation) {
+            
+            switch (operation) {
+                case 'sum':
+                    console.log (sum (arg1,arg2));
+                    break;
+                case 'res':
+                    console.log (res (arg1,arg2));
+                    break;
+                case 'del':
+                    console.log (del (arg1,arg2));
+                    break;
+                case 'mul':
+                    console.log (mul (arg1,arg2));
+                    break;
+            }
+        }
+
+        let a = 4;
+        let b = 8;
+        let action = prompt('Введите операцию');
+        
+        mathOperation (a,b,action);
+    
+       // console.log (sum (a,b));
+       // console.log (res (a,b));
+       // console.log (del (a,b));
+       //console.log (mul (a,b));
+
+    </script>
+</body>
+</html>
